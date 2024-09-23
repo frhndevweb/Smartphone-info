@@ -28,7 +28,7 @@ function showDetails(product) {
                       </ul>`;
             break;
         case 'Realmi C65':
-            specs = `<h2>Spesifikasi Realmi C65</h2>
+            specs = `<h2>Spesifikasi Realme C65</h2>
                       <ul>
                           <li>Prosesor: MediaTek Helio G85</li>
                           <li>Layar: IPS LCD 6,5 inci</li>
