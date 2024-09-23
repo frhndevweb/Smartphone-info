@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        header {
+    background: #1e1e2f; /* Warna gelap yang elegan */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd00; /* Warna hover yang cerah */
+}
+        .contact {
+    max-width: 600px; /* Lebar maksimal konten */
+    margin: 40px auto; /* Pusatkan konten dengan margin otomatis */
+    padding: 20px;
+    background: #ffffff; /* Latar belakang putih untuk konten */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Ukuran font judul */
+    text-align: center; /* Pusatkan teks */
+}
+
+.contact label {
+    display: block; /* Agar label tampil di atas input */
+    margin-bottom: 5px;
+    font-weight: bold; /* Tebalkan label */
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%; /* Lebar penuh untuk input */
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 20px; /* Jarak antara input */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 5px; /* Sudut membulat pada input */
+    font-size: 1rem; /* Ukuran font pada input */
+}
+
+.contact button {
+    background-color: #1e1e2f; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    border: none; /* Hapus garis tepi */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border-radius: 5px; /* Sudut membulat pada tombol */
+    cursor: pointer; /* Kursor menjadi pointer saat hover */
+    font-size: 1rem; /* Ukuran font pada tombol */
+    transition: background-color 0.3s; /* Transisi warna latar belakang */
+}
+
+.contact button:hover {
+    background-color: #ffdd00; /* Warna latar belakang saat hover */
+}
+
+.contact-info {
+    margin-top: 30px; /* Jarak di atas informasi kontak */
+    text-align: center; /* Pusatkan teks */
+}
+
+.contact-info h3 {
+    margin-bottom: 10px; /* Jarak di bawah judul informasi kontak */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Jarak antara paragraf */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e2f;
+    color: #ffffff;
+    position: relative;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontak Kami</h1>
+        <nav>
+            <ul>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Hubungi Kami</h2>
+            <form action="https://formspree.io/f/mwperkya" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <p>Email: frhndevweb@gmail.com</p>
+                <p>Telepon: +62 882-2566-0319</p>
+                <p>Alamat: Jl. Soekarno-Hatta No 2, Kab. Cilacap, Jawa Tengah, Indonesia</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smartphone Info</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah pengiriman form
+            alert('Pesan Anda telah dikirim! Terima kasih.');
+            this.reset(); // Mengatur ulang form setelah pengiriman
+        });
+    </script>
+</body>
+</html>

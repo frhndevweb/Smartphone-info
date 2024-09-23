@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Info</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .specs {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smartphone Terbaru</h1>
+        <nav>
+            <ul>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product" onclick="showDetails('Samsung Galaxy S24 Ultra')">
+                <img src="image/galaxy_s24ultra.jpg" alt="Samsung Galaxy S24 Ultra">
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p>Smartphone terbaru dari Samsung dengan performa luar biasa dan kamera canggih.</p>
+            </div>
+            <div class="product" onclick="showDetails('iPhone 15 Pro Max')">
+                <img src="image/iphone15promax.jpg" alt="iPhone 15 Pro Max">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>Flagship Apple dengan desain premium dan teknologi mutakhir.</p>
+            </div>
+            <div class="product" onclick="showDetails('Realmi C65')">
+                <img src="image/realme-c65-1.jpg" alt="Realmi C65">
+                <h3>Realmi C65</h3>
+                <p>Smartphone terjangkau dengan performa yang solid.</p>
+            </div>
+            <div class="product" onclick="showDetails('Vivo iQOO Z9 5G')">
+                <img src="image/Vivo-iQOO-Z9-5G-Green.jpg" alt="Vivo iQOO Z9 5G">
+                <h3>Vivo iQOO Z9 5G</h3>
+                <p>Smartphone gaming dengan performa tinggi dan konektivitas 5G.</p>
+            </div>
+            <div class="product" onclick="showDetails('Infinix Note 40')">
+                <img src="image/Infinix-Note-40.jpg" alt="Infinix Note 40">
+                <h3>Infinix Note 40</h3>
+                <p>Smartphone dengan layar besar dan fitur multimedia yang menarik.</p>
+            </div>
+            <div class="product" onclick="showDetails('OPPO Reno 11 5G')">
+                <img src="image/OPPO Reno 11 5G.jpg" alt="Infinix Note 40">
+                <h3>OPPO Reno 11 5G</h3>
+                <p>Smartphone dengan layar besar dan fitur multimedia yang menarik.</p>
+            </div>
+        </section>
+
+        <div id="specs" class="specs"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smartphone Info</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
